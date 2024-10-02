@@ -1,8 +1,8 @@
 """Altere o sistema anterior (exercicioPython06) e faça um sistema de login, pedindo a senha do
 usuário e mostrando seu nome e a mensagem, login efetuado com sucesso."""
 
-nomes = [" "] * 5
-senhas = [0] * 5
+nomes = [" "] * 2
+senhas = [0] * 2
 tamanho = len(nomes)
 opcao = 0
 tentativas = 0
