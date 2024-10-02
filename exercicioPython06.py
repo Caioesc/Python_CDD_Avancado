@@ -11,3 +11,4 @@ for i in range(tamanho):
 
 for x in range(tamanho):
     print(f"Usuário {x+1}: \nNome: {nomes[x]} \nSenha: {senhas[x]} \nPosição no array: {x}\n")
+
