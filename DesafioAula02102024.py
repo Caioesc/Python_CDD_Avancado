@@ -1,8 +1,8 @@
 """Altere o sistema anterior (exercicioPython06) e faça um sistema de login, pedindo a senha do
 usuário e mostrando seu nome e a mensagem, login efetuado com sucesso."""
 
-nomes = [" "] * 2
-senhas = [0] * 2
+nomes = [" "] * 5
+senhas = [0] * 5
 tamanho = len(nomes)
 opcao = 0
 tentativas = 0
@@ -38,6 +38,8 @@ while opcao != 4:
 
     elif opcao == 4:
         print("Programa encerrado.")
+    else:
+        print("Opção inválida!")
 
 
 
