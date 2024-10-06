@@ -6,6 +6,7 @@ senhas = [0] * 5
 tamanho = len(nomes)
 opcao = 0
 tentativas = 0
+cont = 0
 
 while opcao != 4:
     opcao = int(input(f"\nDigite a opção desejada: \n1 - Cadastro \n2 - Login \n3 - Mostrar usuários \n4 - Sair "))
@@ -16,11 +17,11 @@ while opcao != 4:
 
     elif opcao == 2:
         usuario = input("Digite seu nome de usuário: ")
-        for i in range(tamanho):
-            if usuario == nomes[i]:
+        for j in range(tamanho):
+            if usuario == nomes[j]:
                 while tentativas < 3:
                     senha = int(input("Digite sua senha: "))
-                    if senha == senhas[i]:
+                    if senha == senhas[j]:
                         print("Login efetuado com sucesso!")
                         opcao = 4
                         break
@@ -34,12 +35,20 @@ while opcao != 4:
             print("Usuário não está no cadastro!\n")
 
     elif opcao == 3:
-        print(f"A lista de cadastrados é: {nomes}")
+        for k in range(tamanho):
+            if nomes[k] == " ":
+                cont += 1
+        if cont == 5:
+            print("\nNenhum usuário cadastrado.")
+        else:
+            for l in range(tamanho):
+                print(f"{l+1}º Usuário: {nomes[l]}")
 
     elif opcao == 4:
         print("Programa encerrado.")
     else:
         print("Opção inválida!")
+
 
 
 
